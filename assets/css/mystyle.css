@@ -1684,7 +1684,7 @@ header {
   .marquee a {
 	  display:  inline-block;
 	  white-space: nowrap;
-	  padding-right: 5.4rem;
+	  padding-right: 1rem;
   }
   
   .marquee-wrapper:hover .marquee {
