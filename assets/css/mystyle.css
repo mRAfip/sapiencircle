@@ -1324,12 +1324,18 @@ header {
 
 
 
+	body:not(.tt-boxed) .tt-header-inner,
+.tt-header-inner:not(.tt-wrap) {
+	padding-left: 5% !important;
+	padding-right: 5% !important;
+}
+
 
 	
 	.hero_top{
 
-		padding: 1% 10%;
-		padding-top: 11%;
+		padding: 10% 10%;
+		padding-top: 35%;
 
 		display: flex;
 		flex-direction: column;
@@ -1353,12 +1359,13 @@ header {
 
 	.main-heading{
 
-		font-size: calc(5px + 6.5vw);
+		font-size: calc(8px + 6.5vw);
 		text-align: center;
 		font-weight: 700;
 		color: rgba(255, 255, 255, 0.747);
 		backdrop-filter: blur(20px);
 		-webkit-backdrop-filter: blur(20px);
+		margin-top: 5%;
 	}
 
 
