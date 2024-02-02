@@ -2793,6 +2793,15 @@
 	});
 
 
+		// Hover scrolling speed.
+		$(".tt-scrolling-work").each(function() {
+			var $tt_stSpeed = $(this).data("scroll-speed");
+			$(this).find(".tt-scrolling-work-inner").css({ 
+				"animation-duration": $tt_stSpeed + "s",
+			});
+		});
+	
+
 
 	// ================================================================
 	// Scroll between anchors 

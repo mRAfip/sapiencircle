@@ -1,0 +1,57 @@
+.hero-section{
+
+    padding-top: 15%;
+    padding-left: 3%;
+    padding-right: 3%;
+    display: flex;
+    border-bottom: solid 1px #232323;
+    gap: 20%;
+
+}
+
+.main-head{
+
+    font-size: 5.5vw;
+    margin-top: -10%;
+    font-weight: 300;
+}
+
+.div-head-right{
+
+    width: 40%;
+    padding-top: 3%;
+    
+
+}
+
+.para-head{
+
+  
+}
+
+body:not(.tt-boxed) .tt-header-inner,
+.tt-header-inner:not(.tt-wrap) {
+	padding-left: 3% !important;
+	padding-right: 3% !important;
+}
+
+
+.portfolio-title{
+
+    margin-top: 5%;
+    margin-bottom: 1%;
+    opacity: 0.65;
+}
+.portfolio-amount{
+    margin-top: -10%;
+    font-size: 1rem;
+    opacity: 0.45;
+}
+
+
+
+@media only screen and (min-device-width: 992px) and (max-device-width: 1199px){}
+
+@media only screen and (min-width: 768px) and (max-width:991px ) {}
+
+@media only screen and (max-width: 767px){}
