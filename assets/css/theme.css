@@ -869,8 +869,8 @@ body.is-firefox .tt-heading.tt-heading-stroke .tt-heading-title {
 
 body:not(.tt-boxed) .tt-header-inner,
 .tt-header-inner:not(.tt-wrap) {
-	padding-left: 18%;
-	padding-right: 18%;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 /* header columns */
