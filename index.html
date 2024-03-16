@@ -214,10 +214,10 @@
 
 						</div>
 						<!-- <h1 class="main-text">sapien circle</h1> -->
-						<p class="para-header">Join Sapien Circle, a rewards-based community for job seekers and freelancers to learn, connect, and find success. The Sapien Circle is almost here - Join for more updates!</p>
+						<p class="para-header">Join Sapien Circle, a rewards-based community for job seekers and freelancers to, learn, connect, and find success. The Sapien Circle is almost here - Join for more updates!</p>
 
 
-						<div class="btn_for_join">
+						<!-- <div class="btn_for_join">
 
 							<div class="join_btn">
 								I'm a Jobseeker
@@ -233,13 +233,76 @@
 										<li><a href="https://www.facebook.com/themetorium" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a></li>
 										<li><a href="https://twitter.com/Themetorium" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a></li>
 										<li><a href="https://www.youtube.com/" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a></li>
-										<!-- <li><a href="https://www.behance.net/Themetorium" class="magnetic-item" target="_blank" rel="noopener"><i class="fab fa-behance"></i></a></li> -->
 									</ul>
-								</div> <!-- /.social-buttons -->
+								</div> 
 							</div>
 							
 
+						</div> -->
+
+
+						<div class="tt-heading tt-heading-xxlg margin-bottom-8-p anim-fadeinup joining-form">
+							<h3 class="tt-heading-subtitle">Stay Informed! Get job & freelance updates on WhatsApp.</h3>
 						</div>
+
+
+						<form id="tt-contact-form" class="tt-form-filled anim-fadeinup">
+			
+			
+							<div class="tt-row">
+								<div class="tt-col-md-6">
+	
+									<div class="tt-form-group ">
+										<label>Your Name <span class="required">*</span></label>
+										<input id="name" class="tt-form-control name-div" type="text" name="Name" placeholder=""
+											required>
+									</div>
+	
+								</div> <!-- /.tt-col -->
+	
+								<div class="tt-col-md-6">
+	
+									<div class="tt-form-group">
+										<label>Phone Number <span class="required">*</span></label>
+										<input id="phone" class="tt-form-control" type="text" name="phone" placeholder=""
+											required>
+	
+									</div>
+	
+								</div> <!-- /.tt-col -->
+							</div> <!-- /.tt-row -->
+	
+							<!-- <div class="tt-form-group">
+											<label>Appointment Date <span class="required">*</span></label>
+											<input class="tt-form-control" type="text" name="Date" placeholder="" required>
+										</div> -->
+	
+							<!-- <div class="tt-form-group">
+											<label>Select an option <span class="required">*</span></label>
+											<select class="tt-form-control" name="option" required>
+												<option value="" disabled selected>Please choose an option</option>
+												<option value="Say Hello">Say hello</option>
+												<option value="New Project">New project</option>
+												<option value="Feedback">Feedback</option>
+												<option value="Other">Other</option>
+											</select>
+										</div> -->
+	
+							<div class="tt-form-group">
+								<label>I'm </label>
+								<input id="location" class="tt-form-control" type="text" name="Name" placeholder="Job seeker ,  freelancer,  student,  startup founder,  looking for talents"
+									required>
+							</div>
+	
+							<small class="tt-form-text"><em>Fields marked with an asterisk (*) are required!</em></small>
+	
+							<button type="submit" class="tt-btn tt-btn-primary margin-top-30">
+								<div data-hover="Send Message">Chat with WhatsApp</div>
+								<span class="tt-btn-icon"><i class="fas fa-paper-plane"></i></span>
+							</button>
+						</form>
+
+					
 
 
                     </div>
@@ -378,6 +441,29 @@
             updateCounter();
             });
         </script>
+
+
+		<script>
+
+
+			const appointmentForm = document.getElementById('tt-contact-form');
+
+			appointmentForm.addEventListener('submit', (event) => {
+				event.preventDefault(); // Prevent default form submission
+
+				const name = document.getElementById("name").value;/* Get name value from form */
+				const phone = document.getElementById("phone").value;
+				const location = document.getElementById("location").value;/* Get message value from form */
+
+				const formattedMessage = `Plaese book an appointment\n Name: ${name}\nPhone: ${phone}\n Location:${location}`;
+
+				const whatsappUrl = `https://wa.me/+7907977521?text=${encodeURIComponent(formattedMessage)}`;
+				
+				window.open(whatsappUrl, "_blank");
+
+			});
+
+		</script>
 
 		<!-- Core JS -->
 		<script src="assets/vendor/jquery/jquery.min.js"></script> <!-- jquery JS (https://jquery.com) -->

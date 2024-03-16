@@ -56,8 +56,23 @@ header {
 	width: 100%;
 	transition: background-color 0.5s ease-in-out;
   }
+
+  .name-div{
+
+	width: 98%;
+
+  }
   
   @media only screen and (min-device-width: 1200px) {
+
+
+
+	body:not(.tt-boxed) .tt-header-inner,
+	.tt-header-inner:not(.tt-wrap) {
+		padding-left: 18%;
+		padding-right: 18%;
+	}
+
 
 
 	.hero_top{
@@ -221,6 +236,9 @@ header {
 @media only screen and (min-width: 768px) and (max-width:991px ){
 
 
+
+
+
 	.hero_top{
 
 		padding: 0% 5%;
@@ -253,7 +271,7 @@ header {
 		margin-top: 5%;
 	} 
 
-	.btn_for_join{
+	/* .btn_for_join{
 
 		padding: 2% 0;
 		display: flex;
@@ -285,8 +303,14 @@ header {
 
 		border: solid #fff 1px;
 		
-	}
+	} */
 
+
+
+	.joining-form{
+
+		margin-top: 8%;
+	}
 }
 
 @media only screen and (max-width: 767px){
